@@ -1,5 +1,6 @@
 class UI {
-    constructor() {
+    constructor(id) {
+        this.id = id;
         this.budgetFeedback = document.querySelector(".budget-feedback");
         this.expenseFeedback = document.querySelector(".expense-feedback");
         this.budgetForm = document.getElementById("budget-form");
@@ -16,3 +17,32 @@ class UI {
         this.itemID = 0;
     }
 }
+
+function eventListeners(){
+    const budgetForm = document.getElementById("budget-form");
+    const expenseForm = document.getElementById("expense-form");
+    const expenseList = document.getElementById("expense-list");
+
+    //new instance of UI class
+    const ui = new UI();
+
+    //budget form submit
+    budgetForm.addEventListener("submit", function(e){
+
+    });
+
+    //expense form submit
+    expenseForm.addEventListener("submit", function(e){
+
+    });
+
+    //expense form submit
+    expenseList.addEventListener("click", function(e){
+
+    });
+
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+   eventListeners();
+});
