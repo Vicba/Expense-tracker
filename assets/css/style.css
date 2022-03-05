@@ -41,7 +41,7 @@ body {
 }
 .budget-submit:hover {
     background: var(--mainGreen);
-    color: var(--mainDark);
+    color: var(--mainWhite);
 }
 
 .budget-input {
